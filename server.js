@@ -42,4 +42,4 @@ app.delete("/api/contactos/:id", (req, res) => {
   res.json({ ok: true });
 });
 
-app.listen(3000, () => console.log("Agenda corriendo en http://localhost:3000"));
+app.listen(3000, '0.0.0.0', () => console.log("Agenda corriendo en http://0.0.0.0:3000"));
