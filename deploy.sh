@@ -6,10 +6,10 @@ git pull origin main
 
 echo "detenemos contenedores"
 #Detenemos contenedores
-sudo docker-compose down
+sudo docker compose down
 
 #Inicializamos contenedores y reconstruimos
 echo "Inicializamos contenedores y reconstruimos imagen actualizada"
-sudo docker-compose -f docker-compose.production.yml up -d --build
+sudo docker compose -f docker-compose.production.yml up -d --build
 
 echo "Contenedores actualizados y en ejecución"
