@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   agenda:
+    container_name: dockerAgenda
     build: .
     ports:
       - "80:3000"
